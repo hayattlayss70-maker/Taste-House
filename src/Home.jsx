@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <section className="hero" id="home">
@@ -11,15 +13,15 @@ function Home() {
           flavors. Your favorite food is just one click away!
         </p>
 
-        <a href="/menu" className="order-btn">
+        <Link to="/menu" className="order-btn">
           Explore Menu →
-        </a>
+        </Link>
       </div>
 
       <div className="hero-image">
         <img
           src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000"
-          alt="Delicious burger"
+          alt="Restaurant menu highlight"
         />
       </div>
     </section>
